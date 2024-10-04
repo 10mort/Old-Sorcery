@@ -1,0 +1,25 @@
+/* Dragon Storyline*/
+.bodyDragon{
+background-image: url('images/Backgrounds/dragonCastle.png');
+}
+
+.characterDragon{
+position: relative;
+width: 700px;
+height: 953.99px;
+left: 90px;
+top: 48px;
+}
+
+/* Conversation */
+.option{
+background-color: #04AA6D; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+
