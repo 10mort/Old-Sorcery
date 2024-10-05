@@ -1,25 +1,66 @@
-/* Dragon Storyline*/
-.bodyDragon{
-background-image: url('images/Backgrounds/dragonCastle.png');
+/* Til på Mandag.
+
+    1. Lav det hele / størstedelen om til en flexbox
+    1.1. eller bare conversation.
+    2. Find ud af hvordan knapper kan komme OVER character
+    3. Find ud af hvordan knapper kan sættes op korrekt.
+    
+*/
+
+/* Logo */
+.logo {
+  height: 90px;
+  width: auto;
 }
 
-.characterDragon{
-position: relative;
-width: 700px;
-height: 953.99px;
-left: 90px;
-top: 48px;
+/* Dragon Storyline*/
+.bodyDragon {
+  background-image: url("images/Backgrounds/dragonCastle.png");
+  overflow: hidden;
+}
+
+.characterDragon {
+  position: absolute;
+  overflow: hidden;
+  width: 700px;
+  height: 953.99px;
+  left: 30px;
+  top: 48px;
 }
 
 /* Conversation */
-.option{
-background-color: #04AA6D; /* Green */
-border: none;
-color: white;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
+.person {
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
+.conversation {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 14px 27px;
+  gap: 10px;
+  width: 1000px;
+  align-self: stretch;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.option {
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
