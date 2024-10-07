@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NPC Template</title>
     <link rel="stylesheet" href="stylemort.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <!-- Ændre denne til body(Character), f.eks. bodyWitch  -->
@@ -18,29 +24,32 @@
       <!-- Ændre denne til character(Character), f.eks. bodyBat
         Billedet skal ændres til images/character/(character)Paper.png  -->
       <img
-        class="characterDragon"
+        class="characterDragon animateDragon"
         src="images/character/DragonPaper.png"
         alt="Dragon"
       />
+
+      <section>
+        <article class="npc">
+          <!-- Ændre denne til navn på karakter / fortæller  -->
+          <p class="person">Narrator</p>
+          <!-- Ændre denne til samtalen  -->
+          <p class="conversation">
+            Seems like the dragon is sleeping, he must be worn out after taking
+            over the kingdom. Do you want to wake him up?
+          </p>
+          <aside class="options">
+            <!-- Ændre denne til den ANDEN mulighed, inde på docs. Hvis ingen, så slet denne del.  -->
+            <a class="option" href="#">LEAVE QUIETLY</a>
+            <!-- Ændre denne til den FØRSTE mulighed, inde på docs. Hvis pil, så skriv pil.  -->
+            <a class="option" href="#">YES</a>
+          </aside>
+        </article>
+        <a class="backButton" href="homepage.html">
+          <img src="images/Extra/BackButton.svg" alt="back to map" />
+          Back To Map
+        </a>
+      </section>
     </main>
-    <section>
-      <!-- Ændre denne til navn på karakter / fortæller  -->
-      <p class="person">Narrator</p>
-      <!-- Ændre denne til samtalen  -->
-      <p class="conversation">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-        laborum reiciendis beatae cupiditate dolores ut inventore ipsam earum
-        eveniet placeat facilis perferendis natus hic quidem, cumque, distinctio
-        consectetur, laboriosam expedita?
-      </p>
-      <!-- Ændre denne til den ANDEN mulighed, inde på docs. Hvis ingen, så slet denne del.  -->
-      <a class="option" href="#">Option Left</a>
-      <!-- Ændre denne til den FØRSTE mulighed, inde på docs. Hvis pil, så skriv pil.  -->
-      <a class="option" href="#">Option Right</a>
-      <a class="backButton" href="#">
-        <img src="images/Extra/BackButton.svg" alt="back to map" />
-        Back To Map
-      </a>
-    </section>
   </body>
 </html>

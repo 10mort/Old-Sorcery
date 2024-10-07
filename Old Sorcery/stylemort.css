@@ -7,60 +7,147 @@
     
 */
 
+/*Generalt*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.germania-one-regular {
+  font-family: "Germania One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Body Styling (Dragon Storyline)*/
+.bodyDragon {
+  background-image: url("images/Backgrounds/dragonCastle.png");
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+/* Dragon Character */
+.characterDragon {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+  height: auto;
+  margin-right: 600px;
+  margin-top: 200px;
+}
+
+@keyframes dragon {
+  0% {
+    translate: -900px 200px;
+  }
+
+  100% {
+    translate: 0px;
+  }
+}
+
 /* Logo */
+nav {
+  position: absolute;
+  z-index: 4;
+  top: 20px;
+  left: 20px;
+}
+
 .logo {
   height: 90px;
   width: auto;
 }
 
-/* Dragon Storyline*/
-.bodyDragon {
-  background-image: url("images/Backgrounds/dragonCastle.png");
-  overflow: hidden;
-}
-
-.characterDragon {
-  position: absolute;
-  overflow: hidden;
-  width: 700px;
-  height: 953.99px;
-  left: 30px;
-  top: 48px;
-}
-
 /* Conversation */
+.npc {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 2;
+  top: 500px;
+  left: 10%;
+  padding: 20px;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
 .person {
-  background-color: #04aa6d;
+  position: absolute;
+  z-index: 3;
+  top: -10px;
+  left: 30px;
+  background: linear-gradient(
+    180deg,
+    #8b4100 0%,
+    #9c3904 10%,
+    #9c3904 90%,
+    #8b4100 100%
+  );
+  font-family: "Germania One", system-ui;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 4px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 30px;
+  border-radius: 4px;
 }
 
 .conversation {
+  font-family: "Germania One", system-ui;
+  z-index: 2;
   background-color: white;
   border: none;
   color: black;
-  padding: 14px 27px;
-  gap: 10px;
+  padding: 18px 17px;
   width: 1000px;
-  align-self: stretch;
+  font-size: 25px;
   text-align: left;
-  text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  border-radius: 4px;
+}
+
+.options {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 7px;
 }
 
 .option {
-  background-color: #04aa6d;
+  font-family: "Germania One", system-ui;
+  z-index: 3;
+  background: linear-gradient(
+    180deg,
+    #8b4100 0%,
+    #9c3904 10%,
+    #9c3904 90%,
+    #8b4100 100%
+  );
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 8px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  font-size: 24px;
+  border-radius: 4px;
+}
+
+/* Back Button */
+.backButton {
+  z-index: 6;
+  position: absolute;
+  top: 700px;
+  left: 50px;
+  text-decoration: none;
+  color: white;
+  font-family: "Germania One", system-ui;
 }
