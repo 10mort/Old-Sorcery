@@ -1,7 +1,7 @@
-/* Opg. til Tirsdag
-  <1> Typewriter Effekt.
-  <2> Button-Hover ændre farve.
-  <3> Fyld sider ud.
+/* Opg. til Onsdag
+  <1> Få puttet alt sammen med resten
+  <2> Ryd op i .css koden
+  <3> ???
 */
 
 /*Generalt*/
@@ -111,19 +111,55 @@ img.characterBat {
   z-index: 1;
   position: relative;
   overflow: hidden;
-  width: 700px;
+  width: 600px;
   height: auto;
-  margin-right: 600px;
-  margin-top: 200px;
+  margin-left: 500px;
+  margin-top: 0px;
 }
 
 img.animateBat {
-  animation: bat 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  animation: bat 2s cubic-bezier(0.55, 0.09, 0.68, 0.53) forwards;
 }
 
 @keyframes bat {
   0% {
-    translate: -900px 200px;
+    translate: 1900px 200px;
+  }
+
+  100% {
+    translate: 0px;
+  }
+}
+
+/* Body Styling (Crow Storyline)*/
+.bodyCrow {
+  background-image: url("images/Backgrounds/crowForest.png");
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+/* Crow Character */
+img.characterCrow {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: auto;
+  margin-left: 500px;
+  margin-bottom: 100px;
+}
+
+img.animateCrow {
+  animation: crow 900ms cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+@keyframes crow {
+  0% {
+    translate: 1100px 200px;
   }
 
   100% {
@@ -198,19 +234,13 @@ nav {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 .option {
   font-family: "Germania One", system-ui;
   z-index: 3;
-  background-image: linear-gradient(
-    180deg,
-    #8b4100 0%,
-    #9c3904 10%,
-    #9c3904 90%,
-    #8b4100 100%
-  );
+  background-color: #9c3904;
   border: none;
   color: white;
   padding: 8px 16px;
@@ -223,6 +253,7 @@ nav {
 
 .option:hover {
   transform: scale(1.1);
+  background-color: #5c2000;
 }
 
 .arrow {
